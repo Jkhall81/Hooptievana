@@ -9,9 +9,15 @@ interface CarDetailsProps {
   isOpen: boolean;
   closeModal: () => void;
   car: CarProps;
+  suppressHydrationWarning: boolean;
 }
 
-const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
+const CarDetails = ({
+  isOpen,
+  closeModal,
+  car,
+  suppressHydrationWarning,
+}: CarDetailsProps) => {
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
