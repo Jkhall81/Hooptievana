@@ -26,7 +26,7 @@ export interface CarProps {
   highway_mpg: number;
   make: string;
   model: string;
-  transmission: string;
+  transmission: "a" | "m" | string;
   year: number;
 }
 
